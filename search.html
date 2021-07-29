@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+        i{
+            color: #069;
+            position: absolute;
+            left: 260px;
+            cursor: pointer;
+        }
+        .cont{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        input{
+            box-shadow: inset 0px 3px 1px rgba(0, 138, 207, 0.568);
+            height: 30px;
+            outline: none;
+            width: 250px;
+            transition: 0.5s;
+            opacity: 0;
+            border-radius: 5px;
+            border: 1px solid #069;
+           font-family: 'Ubuntu', sans-serif; 
+            padding: 5px 20px;  
+        }
+    </style>
+</head>
+<body>
+    <!--  -->
+    <div class="cont">
+        <input type="text" placeholder="Search IEEE Section" id="input">
+        <i id="search" class="fas fa-search"></i>
+    </div>
+    <script>
+
+        var i = document.getElementById("search");
+        var input = document.getElementById("input");
+        // window.addEventListener("click",()=>{
+        //     alert("hello");
+        // });
+        i.addEventListener("click",()=>{  //fat arrow function , arrow fucntion
+            input.style.opacity = 1;
+        });
+        
+        </script>
+</body>
+</html>
