@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .cont{
+            display: flex;
+            justify-content: space-around;
+            margin: auto 0px;
+            top: 200px;
+            position: relative;
+
+        }
+        .card
+        {
+            height: 200px;
+            transition: 0.5s;
+            border-radius: 5px;
+            width: 180px;
+            background-color: black;
+            overflow: hidden;
+        }
+
+        .cont .text{
+            position: relative;
+            transition: 0.5s;
+            bottom: -100%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 500;
+            left: 0%;
+            user-select: none;
+            color: white;
+            text-align: center;
+        }
+        
+        .card:hover
+        {
+            opacity: 0.9;
+	    box-shadow: 0 0 30px black;
+
+        }
+        .card:hover .img
+        {
+            opacity: 0.9;
+        }
+        .card:hover .text
+        {
+            bottom:40%;
+        }
+        .ctx
+        {
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            
+        }
+        .ctx img
+        {
+            background-color: white;
+            padding: 2px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="card">
+            <img src="image.jpg" class="img" width="180" height="200">
+            <div class="text">
+                <p>Name:Suhankar Dutta</p>
+                <p>IEEE Webmastar</p>
+                <div class="ctx">
+                    <a href="https://github.com/Kripton0810" target="_blank"><img src="/git.png" width="25px" height="25px"></a> 
+                    <a href=""><img src="/gogle.png" width="25px" height="25px" target="_blank"></a> 
+                    <a href="https://www.linkedin.com/in/subhankar-d-b87943128/" target="_blank"><img src="/linkedin.png" width="25px" height="25px"></a> 
+                </div>
+            </div>
+            
+        </div>
+        <div class="card">
+            <img src="image.jpg" class="img" width="180" height="200">
+            <div class="text">
+                <p>Name:Amit Sinha</p>
+                <p>IEEE Webmastar</p>
+                <div class="ctx">
+                    <a href="https://github.com/Kripton0810" target="_blank"><img src="/git.png" width="25px" height="25px"></a> 
+                    <a href=""><img src="/gogle.png" width="25px" height="25px" target="_blank"></a> 
+                    <a href="https://www.linkedin.com/in/subhankar-d-b87943128/" target="_blank"><img src="/linkedin.png" width="25px" height="25px"></a> 
+                </div>
+            </div>
+            
+        </div>
+        <div class="card">
+            <img src="image.jpg" class="img" width="180" height="200">
+            <div class="text">
+                <p>Name:Aditya Ojha</p>
+                <p>IEEE Webmastar</p>
+                <div class="ctx">
+                    <a href="https://github.com/Kripton0810" target="_blank"><img src="/git.png" width="25px" height="25px"></a> 
+                    <a href=""><img src="/gogle.png" width="25px" height="25px" target="_blank"></a> 
+                    <a href="https://www.linkedin.com/in/subhankar-d-b87943128/" target="_blank"><img src="/linkedin.png" width="25px" height="25px"></a> 
+                </div>
+            </div>
+            
+        </div>
+       
+    </div>
+</body>
+</html>
