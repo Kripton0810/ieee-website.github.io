@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="logo_ieee.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            width: 100vw;
+        }
+        .link
+        {
+            width: 100%;
+            height: 40px;
+            background-color: rgba(0,102,153,.1);
+            border-bottom: 1px solid #069;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+        }
+       .link a{
+           text-decoration: none;
+           font-family: 'Ubuntu', sans-serif;
+           font-weight: 600;
+           color: #069;
+           font-size: 0.8rem;
+           margin-right: 20px;
+           border-right: 1px solid #069;
+           padding-right: 30px;
+        }
+        .link a:nth-child(1)
+        {
+            margin-left: 100px;
+        }
+        .link a:nth-child(5)
+        {
+            border: none;
+        }
+        @media only screen and (max-width: 786px){
+            .link
+            {
+                flex-direction: column;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="link">
+            <!-- IEEE.org IEEE Xplore Digital LibraryIEEE StandardsIEEE SpectrumMore Sites -->
+            <a href="https://www.ieee.org/" target="_blank">IEEE.org</a>
+            <a href="#">IEEE Xplore Digital</a>
+            <a href="#">LibraryIEEE</a>
+            <a href="#">StandardsIEEE Spectrum</a>
+            <a href="#">More Sites</a>
+        </nav>
+
+    </header>
+</body>
+</html>
