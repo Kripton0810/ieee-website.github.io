@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .cont{
+            width: 100%;
+            display: flex;
+            position: relative;
+            align-items: center;
+            transition: 0.5s;
+            height: 40px;
+            justify-content: space-around;
+            background-color: rgb(1, 117, 175);
+
+        }
+        .cont .menu
+        {
+            text-transform: uppercase;
+            font-weight: 700;
+            text-align: center;
+            width: 100%;
+           font-family: 'Ubuntu', sans-serif;
+           color: #fff;
+           height: 90%;
+           position: relative;
+           cursor: pointer;
+        }
+        .menu:hover
+        {
+            background-color: #fff;
+            color: #069;
+        }
+        #test
+            {
+                display: none;
+            }
+        @media only screen and (max-width: 600px){
+            .cont
+            {
+                flex-direction: column;
+                height: 50vh;
+                left: -100%;
+            }
+            #test
+            {
+                display: block;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="menu">Home</div>
+        <div class="menu">Gallery</div>
+        <div class="menu">Events</div>
+        <div class="menu">About Us</div>
+    </div>
+    <button id="test" onclick="change()">Click me</button>
+    <script>
+        var togal = 0;
+        function change()
+        {
+            if(togal==0)
+            {
+            var cont = document.querySelector('.cont');
+            togal=1;
+            cont.style.left = 0;
+            }
+            else
+            {
+                var cont = document.querySelector('.cont');
+            togal=0;
+            cont.style.left = "-100%";
+            }
+        }
+    </script>
+</body>
+</html>
