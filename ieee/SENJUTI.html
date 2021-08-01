@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEEE section</title>
+    <link rel="icon" href="https://r1.ieee.org/dci-template/wp-content/themes/ieee-dci/images/favicon.png">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            width: 100vw;
+         background-image: url(https://r1.ieee.org/dci-template/wp-content/themes/ieee-dci/images/style-a/header-bkg-blue.png);   
+        background-position: 100% center;
+        background-repeat: repeat-x;
+        }
+        
+        .link {
+            width: 100%;
+            height: 30px;
+            background-color: #0066991A;
+            border-bottom: 1px solid #069;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .link a {
+            text-decoration: none;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 800;
+            color: #069;
+            font-size: 0.6rem;
+            margin-right: 20px;
+            border-right: 1px solid #069;
+            padding-right: 30px;
+
+        }
+
+        .link a:nth-child(1) {
+            margin-left: 100px;
+        }
+
+        .link a:nth-child(5) {
+            border-right: none;
+        }
+
+        @media only screen and (max-width: 350px) {
+            .link {
+                flex-direction: column;
+            }
+        }
+
+        .logo {
+            font-family: 'Open Sans Condensed', sans-serif;
+            color: #069 !important;
+            padding: 0;
+            width: 100%;
+            height: 50px;
+            background-color: transparent;
+            display: flex;
+            margin: 20px 0 20px -21px;
+            
+            /* align-items:center; */
+        }
+
+        .demo1 {
+            flex-grow: 8;
+            
+        }
+
+        .demo2 {
+            flex-grow: 2;
+            padding-top: 10px;
+        }
+
+        .logo a:nth-child(1) {
+            padding: 40px;
+            margin: 20px;
+            margin-top: 20px;
+
+        }
+
+
+        .home a {
+            text-decoration: none;
+            font-family: "Open Sans Condensed", sans-serif;
+            font-weight: bold;
+            color: #ffffff;
+            font: size 10px;
+            margin-right: 20px;
+            border-right: 1px solid #069;
+            padding-right: 30px;
+        }
+
+        .home a:nth-child(1) {
+            margin-left: 100px;
+        }
+
+        .home {
+            width: 100%;
+            height: 30px;
+            background-color: #006699;
+            border-bottom: 1px solid #069;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    
+        .cont
+        {
+           display: flex;
+           justify-content: space-around;
+           margin: auto 0px;
+           top: 200px;
+           position: relative;
+        }
+        .card1
+        {
+         height:200px;
+         overflow: hidden;
+         transition: 0.5s;
+         border-radius: 100px;
+         background-color: black;
+         
+        }
+        .cont .text
+        {
+          position: relative;
+          transition: 0.5s;
+          text-align: center;
+          bottom: -100%;
+          left: 0%;
+          font-family:Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: 600;
+          color:#069;
+          user-select: none;
+          
+        }
+        .card1:hover
+        {
+          opacity: 0.9;
+          box-shadow: 0 0 40px black;
+        }
+        .card1:hover .text
+        {
+            bottom: 40%;
+        }
+        .card1:hover .img
+        {
+            opacity: 0.9;
+            
+        }
+        .ctx
+        {
+         display: flex;
+         justify-content:center;
+         align-items: center;
+        }
+        .ctx img
+        {
+            background-color: #ffffff;
+            padding:2px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="link">
+            <a href="https://www.ieee.org/" target="_blank">IEEE.org</a>
+            <a href="https://ieeexplore.ieee.org/Xplore/home.jsp" target="_blank">IEEE Xplore Digital Library</a>
+            <a href="https://standards.ieee.org/" target="_blank">IEEE Standards</a>
+            <a href="https://spectrum.ieee.org/" target="_blank">IEEE Spectrum</a>
+            <a href="https://www.ieee.org/sitemap.html" target="_blank">More Sites</a>
+
+
+        </nav>
+        <div class="logo">
+            <a href="https://r1.ieee.org/dci-template" title=" IEEE Section"></a>
+            <h1 class="demo1">IEEE Section </h1>
+            <img class="demo2" src="https://r1.ieee.org/dci-template/wp-content/themes/ieee-dci/images/logo-ieee.svg" height="70%" 
+                alt="IEEE">
+                
+        </div>
+
+
+
+        <nav class="home">
+            <a href="https://r1.ieee.org/dci-template/">HOME TEMPLATE1</a>
+        </nav>
+    </header>
+    <div class="cont">
+       <div class="card1"><img src="/white background image.jpg" height="200" class="img" alt="image1">
+        <div class="text">
+        <p>NAME : Jane</p>
+        <p>IEEE Member</p>
+         <div class="ctx">
+             <a href="https://github.com/" target="_blank"><img src="/github.png" alt="github" height="20px" width="20px"></a>
+             <a href="https://www.google.co.in/" target="_blank"><img src="/google-logo.jpg" alt="google" height="20px" width="20px"></a>
+              <a href="https://www.linkedin.com/signup" target="_blank"><img src="/linkedin.png" alt="linkedin" height="20px" width="20px"></a>
+         </div>             
+        </div>
+        </div>
+        <div class="card1"><img src="/man.jpg" height="200" class="img" alt="image1">
+            <div class="text">
+            <p>NAME : Harry</p>
+            <p>IEEE Member</p>
+             <div class="ctx">
+                 <a href="https://github.com/" target="_blank"><img src="/github.png" alt="github" height="20px" width="20px"></a>
+                 <a href="https://www.google.co.in/" target="_blank"><img src="/google-logo.jpg" alt="google" height="20px" width="20px"></a>
+                  <a href="https://www.linkedin.com/signup" target="_blank"><img src="/linkedin.png" alt="linkedin" height="20px" width="20px"></a>
+             </div>             
+            </div>
+            </div>
+            <div class="card1"><img src="/istockphoto-494711330-612x612.jpg" height="200" class="img" alt="image1">
+                <div class="text">
+                <p>NAME : Avishek</p>
+                <p>IEEE Member</p>
+                 <div class="ctx">
+                     <a href="https://github.com/" target="_blank"><img src="/github.png" alt="github" height="20px" width="20px"></a>
+                     <a href="https://www.google.co.in/" target="_blank"><img src="/google-logo.jpg" alt="google" height="20px" width="20px"></a>
+                      <a href="https://www.linkedin.com/signup" target="_blank"><img src="/linkedin.png" alt="linkedin" height="20px" width="20px"></a>
+                 </div>             
+                </div>
+                </div>
+                    
+    </div>
+</body>
+
+</html>
